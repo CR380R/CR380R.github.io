@@ -1,170 +1,155 @@
-.bg {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0px;
-  z-index: 0;
-  background-color: #ffe4c7;
+@import 'https://fonts.googleapis.com/css?family=Sintony';
+* {
+  box-sizing: border-box;
 }
 
-.layer {
-  position: fixed;
-  top: 0px;
-  margin: auto;
-  width: 100%;
-  z-index: 100;
-  min-height: 400px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-
-.parallax {
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  perspective: 1px;
-}
-
-.parallax-group {
-  position: relative;
-  height: 100vh;
-  transform-style: preserve-3d;
-}
-
-.parallax-group div:nth-child(1) {
-  background-color: #ffe4c7;
-  margin-top: 600px;
-  background-color: #d9d1b8;
-  transform: translateZ(-12px) scale(13);   /*Scale value is what's causing the gap on left - can also do translateX(-10)*/
-}
-.parallax-group div:nth-child(1):before {
-  content: "";
-  width: 100%;
-  height: 200px;
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  background-image: linear-gradient(135deg, transparent 66%, #d9d1b8 66.01%), linear-gradient(45deg, #d9d1b8 34%, transparent 34.01%);
-  background-position: 250px 0px;
-  background-size: 200px 100%;
-  background-repeat: repeat-x;
-}
-
-.parallax-group div:nth-child(2) {
-  background-color: #ffe4c7;
-  margin-top: 900px;
-  background-color: #b3beaa;
-  transform: translateZ(-10px) scale(11);
-}
-.parallax-group div:nth-child(2):before {
-  content: "";
-  width: 100%;
-  height: 200px;
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  background-image: linear-gradient(135deg, transparent 66%, #b3beaa 66.01%), linear-gradient(45deg, #b3beaa 34%, transparent 34.01%);
-  background-position: 252px 0px;
-  background-size: 200px 100%;
-  background-repeat: repeat-x;
-}
-
-.parallax-group div:nth-child(3) {
-  background-color: #ffe4c7;
-  margin-top: 1200px;
-  background-color: #8cab9b;
-  transform: translateZ(-8px) scale(9);
-}
-.parallax-group div:nth-child(3):before {
-  content: "";
-  width: 100%;
-  height: 200px;
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  background-image: linear-gradient(135deg, transparent 66%, #8cab9b 66.01%), linear-gradient(45deg, #8cab9b 34%, transparent 34.01%);
-  background-position: 90px 0px;
-  background-size: 200px 100%;
-  background-repeat: repeat-x;
-}
-
-.parallax-group div:nth-child(4) {
-  background-color: #ffe4c7;
-  margin-top: 1500px;
-  background-color: #66988d;
-  transform: translateZ(-6px) scale(7);
-}
-.parallax-group div:nth-child(4):before {
-  content: "";
-  width: 100%;
-  height: 200px;
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  background-image: linear-gradient(135deg, transparent 66%, #66988d 66.01%), linear-gradient(45deg, #66988d 34%, transparent 34.01%);
-  background-position: 103px 0px;
-  background-size: 200px 100%;
-  background-repeat: repeat-x;
-}
-
-.parallax-group div:nth-child(5) {
-  background-color: #ffe4c7;
-  margin-top: 1800px;
-  background-color: #40867e;
-  transform: translateZ(-4px) scale(5);
-}
-.parallax-group div:nth-child(5):before {
-  content: "";
-  width: 100%;
-  height: 200px;
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  background-image: linear-gradient(135deg, transparent 66%, #40867e 66.01%), linear-gradient(45deg, #40867e 34%, transparent 34.01%);
-  background-position: 206px 0px;
-  background-size: 200px 100%;
-  background-repeat: repeat-x;
-}
-
-.parallax-group div:nth-child(6) {
-  background-color: #ffe4c7;
-  margin-top: 2100px;
-  background-color: #1a7370;
-  transform: translateZ(-2px) scale(3);
-}
-.parallax-group div:nth-child(6):before {
-  content: "";
-  width: 100%;
-  height: 200px;
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  background-image: linear-gradient(135deg, transparent 66%, #1a7370 66.01%), linear-gradient(45deg, #1a7370 34%, transparent 34.01%);
-  background-position: 257px 0px;
-  background-size: 200px 100%;
-  background-repeat: repeat-x;
-}
-
-.content {
-  position: relative;
-  background-color: transparent;
-  font-family: "Arial";
-  letter-spacing: 10px;
+body {
+  background: #222;
+  padding: 0;
+  margin: 0;
+  font-family: "Sintony", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
   text-transform: uppercase;
-  line-height: 40px;
-  z-index: 10;
-  width: 100%;
-  font-size: 15px;
-  text-align: center;
-  color: white;
-  margin-top: 1000px;
-  transform: translateZ(-2px) scale(3);
+  color: #000;
 }
 
-.fill {
-  height: 80%;
+header {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.section {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  letter-spacing: 4px;
+  overflow: hidden;
+  clip: rect(0, auto, auto, 0);
+}
+.section .fixed {
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+.section .white {
+  color: #fff;
+}
+
+.section:nth-child(1) {
+  background-color: #fff;
+  color: #000;
+  top: 0;
+  z-index: 1;
+}
+.section:nth-child(1) .fixed {
+  transform: translate(-50%, -50%);
+}
+
+.section:nth-child(2) {
+  box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+  background-color: #c2850a;
+  color: #fff;
+  top: 100vh;
+  z-index: 2;
+}
+.section:nth-child(2) .fixed {
+  transform: translate(-50%, -50%);
+}
+
+.section:nth-child(3) {
+  box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+  background-color: #0a0ac2;
+  color: #fff;
+  top: 200vh;
+  z-index: 3;
+}
+.section:nth-child(3) .fixed {
+  transform: translate(-50%, -50%);
+}
+
+.section:nth-child(4) {
+  box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+  background-color: #85c20a;
+  color: #fff;
+  top: 300vh;
+  z-index: 4;
+}
+.section:nth-child(4) .fixed {
+  transform: translate(-50%, -50%);
+}
+
+.section:nth-child(5) {
+  box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+  background-color: #850ac2;
+  color: #fff;
+  top: 400vh;
+  z-index: 5;
+}
+.section:nth-child(5) .fixed {
+  transform: translate(-50%, -50%);
+}
+
+.section:nth-child(6) {
+  box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+  background-color: #0ac20a;
+  color: #fff;
+  top: 500vh;
+  z-index: 6;
+}
+.section:nth-child(6) .fixed {
+  transform: translate(-50%, -50%);
+}
+
+.section:nth-child(7) {
+  box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+  background-color: #c20a85;
+  color: #fff;
+  top: 600vh;
+  z-index: 7;
+}
+.section:nth-child(7) .fixed {
+  transform: translate(-50%, -50%);
+}
+
+.section:nth-child(8) {
+  box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+  background-color: #0ac285;
+  color: #fff;
+  top: 700vh;
+  z-index: 8;
+}
+.section:nth-child(8) .fixed {
+  transform: translate(-50%, -50%);
+}
+
+.section:nth-child(9) {
+  box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+  background-color: #c20a0a;
+  color: #fff;
+  top: 800vh;
+  z-index: 9;
+}
+.section:nth-child(9) .fixed {
+  transform: translate(-50%, -50%);
+}
+
+.section:nth-child(10) {
+  background-color: #000;
+  color: #fff;
+  top: 900vh;
+  z-index: 10;
+}
+.section:nth-child(10) .fixed {
+  transform: translate(-50%, -50%);
+}
+
+.oop {
+  position: relative;
+  z-index: auto;
+  height: 10px;
+  background: linear-gradient(141deg, #48ded4 0%, #a026bf 51%, #e82c75 75%);
 }

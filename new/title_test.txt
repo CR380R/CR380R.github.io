@@ -11,5 +11,28 @@ djtmsMYdcuvqf
 EDUCATIONuxfa
 ouPROJECTSfut
 dfkddRESEARCH
+kfurBEYONDfjs
 utbSKILLSelky
 ctEXPERIENCEj
+sldiCODEjfyrc
+
+
+
+
+
+The basics
+- Linux
+- Git
+- Jira/project management
+- Typing/Refactoring techniques
+
+Aws
+- s3
+- ddb
+- lambda
+- cloudwatch
+- ec2
+- iot
+- ivs/elemental
+- panorama
+- codebuild

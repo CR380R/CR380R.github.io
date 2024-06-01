@@ -323,3 +323,63 @@ header {
   max-height: 20em;
   border-radius: 2em;
 }
+
+.project-properties-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-properties {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 1.5em;
+  height: 3em;
+  width: fit-content;
+  background-color: #ffffff;
+  display: flex;
+}
+
+.project-link {
+  background-color: #000;
+  color: #ffffff;
+  border-radius: 1.25em;
+  text-decoration: none;
+  height: 2.5em;
+  line-height: 2.5em;
+  display: block;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  padding-left: 1em;
+  padding-right: 1em;
+  letter-spacing: 0px;
+}
+
+.project-properties-title {
+  color: #000;
+  padding-left: 1em;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.project-properties-dot {
+  color: #000;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+
+
+/* Experience */
+
+.experience-card {
+  background-color: #ffffff;
+  border-radius: 2em;
+  height: fit-content;
+}
+
+.experience-card-text {
+  letter-spacing: 0px;
+  color: #000;
+}

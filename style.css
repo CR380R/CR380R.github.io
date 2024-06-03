@@ -7,9 +7,13 @@
 :root {
   --base1: #EAE7DC;
   --base2: #D8C3A5;
-  --neutral: #8E8D8A;
+  --neutral1: #8E8D8A;
+  --neutral2: #41403f;
+  --neutral3: #4f4f4e;
   --highlight1: #E98074;
   --highlight2: #E85A4F;
+  --highlight3: #ff3b00;
+  --highlight4: #e39289;
 }
 
 body {
@@ -55,7 +59,7 @@ header {
 
 
 .section:nth-child(1) {
-  background-color: var(--base1);
+  background-color: var(--highlight3);
   color: #000;
   top: 0;
   z-index: 1;
@@ -71,7 +75,7 @@ header {
 
 .section:nth-child(2) {
   box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
-  background-color: #c2850a;
+  background-color: white;
   color: #fff;
   top: 100vh;
   z-index: 2;
@@ -82,7 +86,7 @@ header {
 
 .section:nth-child(3) {
   box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
-  background-color: #0a0ac2;
+  background-color: var(--neutral1);
   color: #fff;
   top: 200vh;
   z-index: 3;
@@ -96,7 +100,7 @@ header {
 
 .section:nth-child(4) {
   box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
-  background-color: #85c20a;
+  background-color: var(--highlight3);
   color: #fff;
   top: 300vh;
   z-index: 4;
@@ -110,7 +114,7 @@ header {
 
 .section:nth-child(5) {
   box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
-  background-color: #850ac2;
+  background-color: var(--highlight2);
   color: #fff;
   top: 400vh;
   z-index: 5;
@@ -124,7 +128,7 @@ header {
 
 .section:nth-child(6) {
   box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
-  background-color: #0ac20a;
+  background-color: var(--highlight1);
   color: #fff;
   top: 500vh;
   z-index: 6;
@@ -138,7 +142,7 @@ header {
 
 .section:nth-child(7) {
   box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
-  background-color: #c20a85;
+  background-color: var(--highlight4);
   color: #fff;
   top: 600vh;
   z-index: 7;
@@ -152,7 +156,7 @@ header {
 
 .section:nth-child(8) {
   box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
-  background-color: #0ac285;
+  background-color: var(--neutral2);
   color: #fff;
   top: 700vh;
   z-index: 8;
@@ -166,7 +170,7 @@ header {
 
 .section:nth-child(9) {
   box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
-  background-color: #c20a0a;
+  background-color: var(--neutral3);
   color: #fff;
   top: 800vh;
   z-index: 9;
@@ -180,7 +184,7 @@ header {
 
 .section:nth-child(10) {
   box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
-  background-color: #c20a0a;
+  background-color: var(--neutral1);
   color: #fff;
   top: 900vh;
   z-index: 10;
@@ -194,7 +198,7 @@ header {
 
 .section:nth-child(11) {
   box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
-  background-color: #c20a0a;
+  background-color: var(--base2);
   color: #fff;
   top: 1000vh;
   z-index: 11;
@@ -208,7 +212,7 @@ header {
 
 .section:nth-child(12) {
   box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
-  background-color: #c20a0a;
+  background-color: var(--base1);
   color: #fff;
   top: 1100vh;
   z-index: 12;
@@ -273,11 +277,17 @@ header {
     font-size: 8em;
     margin-block-start: 0em;
     margin-block-end: 0em;
+    color: white;
 }
 
 .sub-header {
     text-align: left;
     margin-left: 13.1em;
+    color: var(--base1);
+}
+
+.intro-text {
+  color: var(--neutral2);
 }
 
 .subsection-title {
